@@ -1,0 +1,15 @@
+{
+  "name": "yet-another-todo",
+  "authors": ["Saket Nalegaonkar"],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

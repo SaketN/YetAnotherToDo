@@ -1,0 +1,7 @@
+body{
+    background: #fff;
+}
+
+.doneTodo{
+    text-decoration: line-through;
+}

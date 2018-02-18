@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yet Another Todo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  bower css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/bower_components/angular-bootstrap/ui-bootstrap-csp.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- todo css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <!-- bower depenencies -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+
+    <!-- app javascript -->
+    <script src="src/main.js"></script>
+    
+    <!-- todo service -->
+    <script src="src/todoService/todoService.js"></script>
+
+    <!-- addto component -->
+    <script src="src/addTodoComponent/addTodoController.js"></script>
+
+    <!-- viewto component -->
+    <script src="src/viewTodoComponent/viewTodoController.js"></script>
+
+</head>
+
+<body ng-app="yatodo">
+    <div class="container">
+        <div ng-include="'src/addTodoComponent/addTodo.html'"></div>
+        <div ng-include="'src/viewTodoComponent/viewTodo.html'"></div>
+    </div>
+</body>
+
+</html>

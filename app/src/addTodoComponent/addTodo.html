@@ -1,0 +1,14 @@
+<div ng-controller="AddTodoCtrl">
+    <div class="jumbotron">
+        <h1 class="text-center">Yet Another Angular TODO</h1>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-offset-1 col-md-9">
+            <input type="text" class="form-control" id="usr" ng-model="newtodo" placeholder="Add a new todo" maxlength="50">
+        </div>
+        <div class="form-group col-md-2">
+            <button type="button" class="btn btn-info" ng-click="addNewTodo(newtodo)">Add to list</button>
+        </div>
+    </div>
+</div>

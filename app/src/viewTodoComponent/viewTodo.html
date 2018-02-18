@@ -1,0 +1,13 @@
+<div ng-controller="ViewTodoCtrl">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-9">
+            <div class="panel panel-default" ng-repeat="todo in todoList">
+                <label class="checkbox-inlines">
+                    <input type="checkbox" ng-model="todo.isDone" ng-checked="todo.isDone" ng-change="toggleTodo(todo)">
+                    <span ng-class="{doneTodo:todo.isDone}">{{todo.todoText}}</span>
+                </label>
+                <button class="btn btn-danger btn-sm pull-right col-md-1" ng-click="removeTodo(todo)">🗑</button>        
+            </div>
+        </div>
+    </div>
+</div>
